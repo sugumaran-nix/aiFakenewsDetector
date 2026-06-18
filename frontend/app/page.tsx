@@ -50,7 +50,7 @@ export default function DashboardPage() {
           </span>
           <h1 className="font-display text-4xl lg:text-5xl font-extrabold leading-tight text-white">
             Detect Misinformation<br />
-            <span className="shimmer-text">Instantly.</span>
+            <span className="shimmer-text-hero">Instantly.</span>
           </h1>
           <p className="text-ink-300 text-base leading-relaxed">
             VeritAI uses fine-tuned transformer models combined with linguistic heuristics
