@@ -58,7 +58,7 @@ export default function DashboardPage() {
           </p>
           <Link
             href="/analyze"
-            className="inline-flex items-center gap-2 rounded-xl bg-[--accent] px-6 py-3 font-display font-semibold text-ink-950 text-sm hover:brightness-110 transition-all"
+            className="inline-flex items-center gap-2 rounded-xl bg-[--accent] px-6 py-3 font-display font-semibold text-white text-sm hover:brightness-110 transition-all"
           >
             Analyze an Article <ArrowRight className="h-4 w-4" />
           </Link>

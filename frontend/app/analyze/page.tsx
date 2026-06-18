@@ -135,7 +135,7 @@ export default function AnalyzePage() {
           <button
             onClick={handleSubmit}
             disabled={loading}
-            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[--accent] px-6 py-3 font-display font-semibold text-ink-950 text-sm hover:brightness-110 disabled:opacity-60 disabled:cursor-not-allowed transition-all"
+            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[--accent] px-6 py-3 font-display font-semibold text-white text-sm hover:brightness-110 disabled:opacity-60 disabled:cursor-not-allowed transition-all"
           >
             {loading ? (
               <><Loader2 className="h-4 w-4 animate-spin" /> Analyzing…</>
