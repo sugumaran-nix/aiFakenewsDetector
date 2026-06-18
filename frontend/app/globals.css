@@ -55,6 +55,24 @@ html, body {
     animation: shimmer 2.4s linear infinite;
   }
 
+  /* Used on text sitting inside the always-dark hero card (bg-ink-950),
+     which does not flip with the light/dark theme — so it must NOT use
+     the theme's var(--text)/var(--accent), or it goes dark-on-dark in
+     light mode. */
+  .shimmer-text-hero {
+    background: linear-gradient(
+      90deg,
+      #E2E8F0 0%,
+      #818CF8 40%,
+      #E2E8F0 80%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 2.4s linear infinite;
+  }
+
   .glass {
     background: rgba(255,255,255,0.04);
     backdrop-filter: blur(12px);
