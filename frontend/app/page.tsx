@@ -36,29 +36,30 @@ export default function DashboardPage() {
       {/* Hero */}
       <div
         data-anim
-        className="relative overflow-hidden rounded-3xl bg-ink-950 dark:bg-ink-900 p-8 lg:p-12 border border-ink-800"
+        className="relative overflow-hidden rounded-3xl p-8 lg:p-12 bg-gradient-to-br from-indigo-500 via-violet-600 to-indigo-700 dark:from-indigo-950 dark:via-violet-950 dark:to-indigo-900"
         style={{ opacity: 0 }}
       >
         {/* Grid texture */}
-        <div className="absolute inset-0 bg-grid-ink opacity-40 pointer-events-none" />
-        {/* Glow blob */}
-        <div className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-[--accent]/10 blur-3xl pointer-events-none" />
+        <div className="absolute inset-0 bg-grid-ink opacity-30 pointer-events-none" />
+        {/* Glow blobs */}
+        <div className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-white/15 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-violet-300/15 dark:bg-violet-500/10 blur-3xl pointer-events-none" />
 
-        <div className="relative space-y-4 max-w-xl">
-          <span className="inline-block rounded-full bg-[--accent]/10 px-4 py-1 text-xs font-mono font-semibold text-[--accent] uppercase tracking-widest border border-[--accent]/20">
+        <div className="relative max-w-xl glass-hero rounded-2xl p-6 lg:p-8 space-y-4">
+          <span className="inline-block rounded-full bg-white/10 px-4 py-1 text-xs font-mono font-semibold text-white uppercase tracking-widest border border-white/20">
             AI-Powered · Open Source
           </span>
           <h1 className="font-display text-4xl lg:text-5xl font-extrabold leading-tight text-white">
             Detect Misinformation<br />
             <span className="shimmer-text-hero">Instantly.</span>
           </h1>
-          <p className="text-ink-300 text-base leading-relaxed">
+          <p className="text-white/80 text-base leading-relaxed">
             VeritAI uses fine-tuned transformer models combined with linguistic heuristics
             to classify news as Real, Fake, or Uncertain — with a calibrated confidence score.
           </p>
           <Link
             href="/analyze"
-            className="inline-flex items-center gap-2 rounded-xl bg-[--accent] px-6 py-3 font-display font-semibold text-white text-sm hover:brightness-110 transition-all"
+            className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 font-display font-semibold text-indigo-700 text-sm hover:bg-white/90 transition-all"
           >
             Analyze an Article <ArrowRight className="h-4 w-4" />
           </Link>

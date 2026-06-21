@@ -55,10 +55,10 @@ html, body {
     animation: shimmer 2.4s linear infinite;
   }
 
-  /* Used on text sitting inside the always-dark hero card (bg-ink-950),
-     which does not flip with the light/dark theme — so it must NOT use
-     the theme's var(--text)/var(--accent), or it goes dark-on-dark in
-     light mode. */
+  /* Used on text sitting inside the hero banner's glass panel, which is
+     always rendered over a colorful accent gradient (in both light and
+     dark mode) — so it needs light, fixed text colors rather than the
+     theme's var(--text)/var(--accent), which would go dark-on-dark. */
   .shimmer-text-hero {
     background: linear-gradient(
       90deg,
@@ -81,6 +81,16 @@ html, body {
 
   .dark .glass {
     background: rgba(14,16,40,0.72);
+  }
+
+  /* Glass panel for the hero banner — the banner itself is now an
+     intentional gradient in both light and dark mode, so this panel
+     stays the same translucent-white treatment regardless of theme. */
+  .glass-hero {
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
   }
 }
 
